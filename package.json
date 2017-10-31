@@ -1,0 +1,26 @@
+{
+  "name": "kmymoney-import",
+  "version": "1.0.0",
+  "description": "Import CSV bank statements into KMyMoney",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/istanbul --reporter=lcov --reporter=text-lcov cover node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "kmymoney",
+    "finance",
+    "banking"
+  ],
+  "author": "Justin Gross",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2",
+    "sinon-chai": "^2.14.0"
+  },
+  "dependencies": {
+    "logrocket": "^0.5.5"
+  }
+}

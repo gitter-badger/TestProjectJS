@@ -1,0 +1,9 @@
+app
+--reporter spec
+--require test/common
+--ui bdd
+
+app.spec.js
+--reporter spec
+--require test/common
+--ui bdd
