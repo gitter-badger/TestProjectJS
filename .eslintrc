@@ -1,6 +1,5 @@
 {
   /* See all the pre-defined configs here: https://www.npmjs.com/package/eslint-config-defaults */
-  "extends": "defaults/configurations/eslint",
   "parser": "babel-eslint",
   "ecmaFeatures": {
     "jsx": true
@@ -16,8 +15,9 @@
     "plugins": [
       "security"
   ],
-    "extends": [
-      "plugin:security/recommended"
+  "extends": [
+    "defaults/configurations/eslint",
+    "plugin:security/recommended"
   ],
   "rules": {
     "eqeqeq": 2,
