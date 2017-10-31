@@ -1,0 +1,15 @@
+sudo: required
+
+language: node
+
+env:
+  CODECLIMATE_REPO_TOKEN: 06c4fc3c170e4b6252dd42e5d12ed37664b11b12a79be42916788072184b1ad3
+
+services:
+  - docker
+
+before_install:
+  - docker build -t JustinTime4Tea/TestProjectJS . -f Dockerfile
+
+script:
+  - docker run JustinTime4Tea/TestProjectJS npm run test

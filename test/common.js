@@ -1,4 +1,3 @@
-'use strict'
 let chai = require('chai')
 let sinonChai = require('sinon-chai')
 let sinon = require('sinon')

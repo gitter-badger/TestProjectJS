@@ -1,0 +1,4 @@
+engines:
+  nodesecurity:
+    enabled: true
+exclude_paths: []

@@ -1,9 +1,13 @@
-app
---reporter spec
+lib
+--require test/common
+--ui bdd
+--recursive
+
+app.spec.js
 --require test/common
 --ui bdd
 
-app.spec.js
---reporter spec
+config
 --require test/common
 --ui bdd
+--recursive
