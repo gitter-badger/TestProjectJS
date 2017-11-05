@@ -1,9 +1,6 @@
 {
   /* See all the pre-defined configs here: https://www.npmjs.com/package/eslint-config-defaults */
   "parser": "babel-eslint",
-  "ecmaFeatures": {
-    "jsx": true
-  },
   "env": {
     "amd": true,
     "browser": true,
@@ -11,15 +8,12 @@
     "node": true,
     "es6": true,
     "worker": true
-  },
-    "plugins": [
+  },"plugins": [
       "security"
-  ],
-  "extends": [
+  ],"extends": [
     "defaults/configurations/eslint",
     "plugin:security/recommended"
-  ],
-  "rules": {
+  ],"rules": {
     "eqeqeq": 2,
     "comma-dangle": 1,
     "no-console": 0,
@@ -33,8 +27,7 @@
     "quotes": [
       2, "single",
       "avoid-escape"
-    ],
-    "semi": 1,
+    ], "semi": 0,
     "semi-spacing": 1,
     "valid-jsdoc": [
       1,

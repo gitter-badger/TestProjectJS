@@ -4,7 +4,7 @@
   "description": "Test project for seeding NodeJS projects",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/istanbul --reporter=lcov --reporter=text-lcov cover node_modules/.bin/mocha",
+    "test": "NODE_ENV=test ./node_modules/.bin/istanbul cover node_modules/.bin/_mocha",
     "codacy": "NODE_ENV=test ./node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage",
     "codecov": "NODE_END=test ./node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R spec && codecov"
   },
@@ -29,6 +29,7 @@
     }
   },
   "devDependencies": {
+    "atom-ui-reporter": "0.0.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
