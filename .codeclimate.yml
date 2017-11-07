@@ -23,9 +23,11 @@ ratings:
   paths:
   - "app/*.js"
   - "lib/*.js"
+  - "config/*.js"
   - "*.js"
 
 exclude_paths:
 - "*.spec.js"
 - "app/*.spec.js"
 - "lib/*.spec.js"
+- "config/*.spec.js"
