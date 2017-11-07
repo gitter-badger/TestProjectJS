@@ -8,14 +8,22 @@
     "node": true,
     "es6": true,
     "worker": true
-  },"plugins": [
-      "security"
-  ],"extends": [
+  },
+  "plugins": [
+    "standard",
+    "import",
+    "promise",
+    "security"
+  ],
+  "extends": [
+    "standard",
     "defaults/configurations/eslint",
+    "google",
     "plugin:security/recommended"
-  ],"rules": {
+  ],
+  "rules": {
     "eqeqeq": 2,
-    "comma-dangle": 1,
+    "comma-dangle": 0,
     "no-console": 0,
     "no-debugger": 1,
     "no-extra-semi": 1,
@@ -25,9 +33,11 @@
     "no-unused-vars": 1,
     "no-var": 1,
     "quotes": [
-      2, "single",
+      2,
+      "single",
       "avoid-escape"
-    ], "semi": 0,
+    ],
+    "semi": 0,
     "semi-spacing": 1,
     "valid-jsdoc": [
       1,
