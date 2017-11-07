@@ -21,6 +21,8 @@ engines:
       - javascript:
 ratings:
   paths:
-  - app/**
-  - lib/**
-  - "**.js"
+  - app/*
+  - lib/*
+  - "*.js"
+exclude_paths:
+- "*.spec.js"
